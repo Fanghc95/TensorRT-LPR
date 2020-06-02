@@ -19,10 +19,13 @@
  3. TensorRT 6.0.1.5
 
 ### 依赖三方工程：
-1.[tensorRTWrapper](https://github.com/lewes6369/tensorRTWrapper):用于部署YOLOv3等模型
-2.[darknet](https://github.com/pjreddie/darknet):YOLOv3车牌检测模型训练
-3.[darkner2caffe](https://github.com/ChenYingpeng/darknet2caffe):darknet模型转为caffe模型
+
+ 1.[tensorRTWrapper](https://github.com/lewes6369/tensorRTWrapper):用于部署YOLOv3等模型；
+ 
+ 2.[darknet](https://github.com/pjreddie/darknet):YOLOv3车牌检测模型训练；
+ 
+ 3.[darkner2caffe](https://github.com/ChenYingpeng/darknet2caffe):darknet模型转为caffe模型。
 
 ### 模型:
-1. yolo对象检测模型
-2. 
+ 1. yolo对象检测模型
+ 2. 
