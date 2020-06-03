@@ -27,5 +27,20 @@
  3.[darkner2caffe](https://github.com/ChenYingpeng/darknet2caffe):darknet模型转为caffe模型。
 
 ### 模型:
- 1. yolo对象检测模型
- 2. 
+1. yolo对象检测模型
+ 
+2. 车牌垂直边界回归模型
+ 
+3. e2e车牌识别模型 
+
+对象检测模型可使用darknet自行训练，再将darknet模型转换为caffe模型即可（工程中yolov3输入尺寸为418），其他模型来自HyperLPR
+
+### 开始:
+'''
+git clone 
+
+#编辑CMakeList.txt配置CUDA，tensorRT，opencv等
+mkdir build&&cd build
+cmake ../
+make -j8
+'''
