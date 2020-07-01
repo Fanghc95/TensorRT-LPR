@@ -25,7 +25,7 @@
  3.[darkner2caffe](https://github.com/ChenYingpeng/darknet2caffe):darknet模型转为caffe模型。
 
 ### 模型:
-1. yolov3对象检测模型
+1. yolov3对象检测模型[百度](链接：https://pan.baidu.com/s/1ceroAl2aQCOwDwmUl80jAQ)(提取码：vm66 )
  
 2. 车牌垂直边界回归模型
  
