@@ -8,8 +8,6 @@
 
 2.源工程使用opencv-dnn模块对模型进行部署运行，改为caffe+tensorRT部署，可调用GPU进行加速
 
-3. ....
-
 ## 使用
 
 ### 工程环境：
@@ -33,7 +31,7 @@
  
 3. e2e车牌识别模型 
 
-yolo对象检测模型可使用darknet自行训练，数据集参考CCPD
+yolo对象检测模型可使用darknet自行训练，数据集参考[CCPD](https://github.com/detectRecog/CCPD)
 
 部署时需要使用[darkner2caffe](https://github.com/ChenYingpeng/darknet2caffe)将darknet模型转换为caffe模型（注意工程中yolov3输入尺寸为418）
 
@@ -41,9 +39,17 @@ yolo对象检测模型可使用darknet自行训练，数据集参考CCPD
 
 ### 开始:
 ```Bash
-git clone 
+git clone git@github.com:Fanghc95/TensorRT-LPR.git
 #编辑CMakeList.txt配置CUDA，tensorRT，opencv等
 mkdir build&&cd build
 cmake ../
 make -j8
+./testPlate  [img_path]
 ```
+
+### 改进方面:
+1. 垂直边界回归没能用到tensorRT，我在部署时没能跑通，大佬们可以继续改进
+
+2. 字符识别部分我用的是开源模型，效果较好但称不上100%完美，因为没接触过OCR没有进行改进（其实也莫得数据）
+
+3. 公开数据集[CCPD](https://github.com/detectRecog/CCPD)虽数据量大但是场景单一，检测部分训练还需要额外数据进行优化
