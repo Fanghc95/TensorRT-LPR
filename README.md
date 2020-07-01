@@ -33,7 +33,7 @@
 
 yolo对象检测模型可使用darknet自行训练，数据集参考[CCPD](https://github.com/detectRecog/CCPD)
 
-部署时需要使用[darkner2caffe](https://github.com/ChenYingpeng/darknet2caffe)将darknet模型转换为caffe模型（注意工程中yolov3输入尺寸为418）
+部署时需要使用[darkner2caffe](https://github.com/ChenYingpeng/darknet2caffe)将darknet模型转换为caffe模型（注意工程中yolov3输入尺寸为416）
 
 车牌边界回归以及识别模型来自[HyperLPR/prj-Linux](https://github.com/zeusees/HyperLPR/tree/master/Prj-Linux)
 
