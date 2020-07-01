@@ -1,4 +1,5 @@
 # TensorRT-LPR
+===================================
 车牌识别
 该工程车牌检测技术参考YOLOv3，识别技术参考[HyperLPR](https://github.com/zeusees/HyperLPR)
 
@@ -27,18 +28,21 @@
  3.[darkner2caffe](https://github.com/ChenYingpeng/darknet2caffe):darknet模型转为caffe模型。
 
 ### 模型:
-1. yolo对象检测模型
+1. yolov3对象检测模型
  
 2. 车牌垂直边界回归模型
  
 3. e2e车牌识别模型 
 
-对象检测模型可使用darknet自行训练，再将darknet模型转换为caffe模型即可（工程中yolov3输入尺寸为418），其他模型来自HyperLPR
+yolo对象检测模型可使用darknet自行训练，数据集参考CCPD
+
+部署时需要使用[darkner2caffe](https://github.com/ChenYingpeng/darknet2caffe)将darknet模型转换为caffe模型（注意工程中yolov3输入尺寸为418）
+
+车牌边界回归以及识别模型来自[HyperLPR/prj-Linux](https://github.com/zeusees/HyperLPR/tree/master/Prj-Linux)
 
 ### 开始:
-'''
+'''Bash
 git clone 
-
 #编辑CMakeList.txt配置CUDA，tensorRT，opencv等
 mkdir build&&cd build
 cmake ../
