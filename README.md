@@ -1,5 +1,4 @@
 # TensorRT-LPR
-===================================
 车牌识别
 该工程车牌检测技术参考YOLOv3，识别技术参考[HyperLPR](https://github.com/zeusees/HyperLPR)
 
@@ -41,10 +40,10 @@ yolo对象检测模型可使用darknet自行训练，数据集参考CCPD
 车牌边界回归以及识别模型来自[HyperLPR/prj-Linux](https://github.com/zeusees/HyperLPR/tree/master/Prj-Linux)
 
 ### 开始:
-'''Bash
+```Bash
 git clone 
 #编辑CMakeList.txt配置CUDA，tensorRT，opencv等
 mkdir build&&cd build
 cmake ../
 make -j8
-'''
+```
