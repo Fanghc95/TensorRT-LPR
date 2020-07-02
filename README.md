@@ -44,7 +44,12 @@ git clone git@github.com:Fanghc95/TensorRT-LPR.git
 mkdir build&&cd build
 cmake ../
 make -j8
-./testPlate  [img_path]
+#构建对象检测模型engine
+./testPlate 0
+#构建车牌识别模型engine
+./testPlate 1
+#部署并测试单张图片
+./testPlate 2 [img_path]
 ```
 
 ### 改进方面:
