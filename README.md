@@ -3,6 +3,7 @@
 该工程车牌检测技术参考YOLOv3，识别技术参考[HyperLPR](https://github.com/zeusees/HyperLPR)
 
 基于Retinaface的车牌检测及关键点检测项目可参考[Plate-Landmarks-detection](https://github.com/Fanghc95/Plate-Landmarks-detection)
+
 工程基于[HyperLPR/prj-Linux](https://github.com/zeusees/HyperLPR/tree/master/Prj-Linux)修改：
 
 1.修改车牌检测方法，改为yolov3实现；
