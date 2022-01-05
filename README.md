@@ -1,10 +1,10 @@
 # TensorRT-LPR
 车牌识别
-该工程车牌检测技术参考YOLOv3，识别技术参考[HyperLPR](https://github.com/zeusees/HyperLPR)
+该工程车牌检测技术参考YOLOv3，识别技术参考[HyperLPR](https://github.com/szad670401/HyperLPR)
 
 基于Retinaface的车牌检测及关键点检测项目可参考[Plate-Landmarks-detection](https://github.com/Fanghc95/Plate-Landmarks-detection)
 
-工程基于[HyperLPR/prj-Linux](https://github.com/zeusees/HyperLPR/tree/master/Prj-Linux)修改：
+工程基于[HyperLPR/prj-Linux](https://github.com/szad670401/HyperLPR/tree/master/Prj-Linux)修改：
 
 1.修改车牌检测方法，改为yolov3实现；
 
@@ -37,7 +37,7 @@ yolo对象检测模型可使用darknet自行训练，数据集参考[CCPD](https
 
 部署时需要使用[darkner2caffe](https://github.com/ChenYingpeng/darknet2caffe)将darknet模型转换为caffe模型（注意工程中yolov3输入尺寸为416）
 
-车牌边界回归以及识别模型来自[HyperLPR/prj-Linux](https://github.com/zeusees/HyperLPR/tree/master/Prj-Linux)
+车牌边界回归以及识别模型来自[HyperLPR/prj-Linux](https://github.com/szad670401/HyperLPR/tree/master/Prj-Linux)
 
 ### 开始:
 ```Bash
